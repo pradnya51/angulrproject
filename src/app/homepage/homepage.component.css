@@ -1,0 +1,11 @@
+.image{
+     background-size:cover; 
+    background-image:url('../../assets/background.jpg');
+    background-attachment:fixed;
+    
+    
+
+  }
+  .ul{font-weight: bold;
+    font-style: italic;
+}

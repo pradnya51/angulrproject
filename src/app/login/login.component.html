@@ -1,0 +1,32 @@
+
+<div class="jumbotron">
+<div class="table table-bordered ">
+    <form [formGroup]="form" (ngSubmit)="adminloginmethod()">
+
+    <table align="center" width="40%" border="1" bgcolor="orange">
+        <tr>
+            <th colspan="2">LOGIN USER</th>
+        </tr>
+        <tr>
+            <td>Username</td>
+            <td><input type="text" formControlName="username" name="username" maxlength="15" 
+            autofocus spellcheck="true" autocomplete="true"
+            placeholder="enter your name"/></td>
+        </tr>
+        <tr>
+            <td>Password</td>
+            <td><input type="password" formControlName="password" name="userpass" maxlength="15" required
+            placeholder="password must be a string"/></td>
+        </tr>
+        
+    
+    <tr style="align:center;">
+    <button class="btn btn-success" type="submit" [routerLink]="['/login']" >LOGIN</button>
+    <button class="btn btn-success" type="reset">CLEAR</button>
+    <a href="/reg" >NEW USER?</a>
+
+    </tr>
+</table>
+</form>
+</div>
+</div>

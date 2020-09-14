@@ -1,0 +1,46 @@
+
+	<div class="jumbotron">
+		<div class="table table-bordered ">
+			<form [formGroup]="form" (ngSubmit)="registermethod()">
+
+				<table align="center" width="40%" border="1" bgcolor="orange">
+					<tr>
+						<th colspan="2">REGISTER USER</th>
+					</tr>
+					<tr>
+						<td>Username</td>
+						<td><input type="text" formControlName="username" maxlength="15" autofocus spellcheck="true"
+								autocomplete="true" placeholder="enter your name" /></td>
+					</tr>
+					<tr>
+						<td>Password</td>
+						<td><input type="password" formControlName="userpass" maxlength="15" required
+								placeholder="password must be text" /></td>
+					</tr>
+					<tr>
+						<td>Address</td>
+						<td><input formControlName="address" rows="4" cols="22" /></td>
+					</tr>
+
+					<tr>
+						<td>Email</td>
+						<td><input type="email" formControlName="email" placeholder="enter your mail-id"></td>
+					</tr>
+
+					<tr>
+						<td>Mobile No.</td>
+						<td><input type="number" formControlName="mobile" placeholder="enter your mobile number"></td>
+					</tr>
+					<tr style="align:center; width:50%;height: 50%;">
+						<button class="btn btn-primary" type="submit" [routerLink]="['/reg']">REGISTER</button>
+						<button class="btn btn-primary" type="reset">clear</button>
+
+					</tr>
+
+
+				</table>
+			</form>
+		</div>
+
+	</div>
+	
