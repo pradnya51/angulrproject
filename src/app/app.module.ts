@@ -17,6 +17,7 @@ import { AdmindashboardComponent } from './admindashboard/admindashboard.compone
 import { RegisterdashboardComponent } from './registerdashboard/registerdashboard.component';
 import { BodyComponent } from './body/body.component';
 import { UpdateuserComponent } from './updateuser/updateuser.component';
+import { AdduserComponent } from './adduser/adduser.component';
 
 @NgModule({
   declarations: [
@@ -31,6 +32,7 @@ import { UpdateuserComponent } from './updateuser/updateuser.component';
     RegisterdashboardComponent,
     BodyComponent,
     UpdateuserComponent,
+    AdduserComponent,
     
   ],
   imports: [
